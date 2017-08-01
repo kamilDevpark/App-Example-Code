@@ -4,9 +4,9 @@
 *.iml
 
 #Application specific, CCV Shop B.V.
-Data/data.*
 Log/*.log
 /Config.php
+/Data/data.*
 
 #macfiles
 *.DS_Store
