@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace AppConnector\Json;
 
@@ -37,6 +37,7 @@ class JsonSerializer
         $oData = json_decode($sJson);
 
         if (json_last_error() !== 0) {
+            var_dump($oData);
             throw new InvalidJsonException();
         }
         return $oData;

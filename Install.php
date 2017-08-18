@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Step 2. Install Endpoint
  * The install step is the location where the user will be ask to confirm his account and set any settings associated with this app.
@@ -60,11 +60,11 @@ if (empty($_POST)) {
 			   API</p>
 
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="bare"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -82,11 +82,11 @@ if (empty($_POST)) {
 			<p>This will install a new language, Pirate, in the webshop.</p>
 
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="language"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -105,11 +105,11 @@ if (empty($_POST)) {
 			<p>This will install the app after creating a few webhooks in the webshop.</p>
 
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="webhooks"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -129,11 +129,11 @@ if (empty($_POST)) {
 			   pixels, chat services, etc. In this example a tracking pixel is added.</p>
 
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="tracking_pixel"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -154,11 +154,11 @@ if (empty($_POST)) {
 			   different options when creating a package label.</p>
 
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="postal_service"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -178,11 +178,11 @@ if (empty($_POST)) {
 			   from a 3rth party.</p>
 
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="ranking_the_product_service"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -209,11 +209,11 @@ if (empty($_POST)) {
             }
             ?>
 			<form action="Install.php" method="post">
-				<input type="hidden" name="api_public" id="api_public" value="<?= $_GET['api_public'] ?>"/>
+				<input type="hidden" name="api_public" id="api_public" value="<?php echo  $_GET['api_public'] ?>"/>
 				<input type="hidden" name="install_type" id="install_type" value="app_psp"/>
 
 				<label for="customer_id">Customer Id (for test purpose only)</label>
-				<input type="text" name="customer_id" id="customer_id" value="<?= rand(0, 10000) ?>"/>
+				<input type="text" name="customer_id" id="customer_id" value="<?php echo  rand(0, 10000) ?>"/>
 
 				<button name="Cancel" class="btn">Cancel</button>
 				<button name="Install" class="btn btn-success">Install</button>
@@ -230,7 +230,7 @@ if (empty($_POST)) {
 		<div class="panel-body">
 
 			<p>
-				api_public: <?= $_GET['api_public'] ?>
+				api_public: <?php echo $_GET['api_public'] ?>
 			</p>
 
 		</div>
@@ -238,7 +238,7 @@ if (empty($_POST)) {
 	</body>
 
 	</html>
-    <?
+    <?php
 } else {
 
     try {

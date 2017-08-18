@@ -171,6 +171,10 @@ class Transaction
         $oObject->created       = $this->getCreated();
         $oObject->date_of_birth = $this->getDateofbirth();
 
+        $oObject->company_name = 'name';
+        $oObject->chamber_of_commerce_number = 'name';
+        $oObject->ipv4_address = '10.10.10.10';
+
         return $oObject;
     }
 
